@@ -1,0 +1,25 @@
+#!/bin/sh
+
+echo "runing pre-commite hook
+./mvnw spotlesss:check
+
+if [$? -ne 0]; then
+echo "spotless check failed, aborting"
+exit 1
+
+fi
+
+echo "spotless:check done"
+echo "runing mvn-test"
+
+./mvnw test
+
+if [$? -ne 0]; then
+echo "test failed, aborting"
+exit 1
+
+fi
+
+echo "pre-commit hook check and test done commiting ...."
+
+exit 0
