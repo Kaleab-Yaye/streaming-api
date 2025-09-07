@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "runing pre-commite hook
+echo "runing pre-commite hook"
 ./mvnw spotlesss:check
 
 if [$? -ne 0]; then
@@ -20,6 +20,6 @@ exit 1
 
 fi
 
-echo "pre-commit hook check and test done commiting ...."
+echo " pre-commit hook check and test done commiting .... "
 
 exit 0
