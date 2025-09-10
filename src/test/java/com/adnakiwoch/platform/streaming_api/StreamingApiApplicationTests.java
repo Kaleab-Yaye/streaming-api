@@ -6,7 +6,6 @@ import com.adnakiwoch.platform.streaming_api.config.BillingProperties;
 import com.adnakiwoch.platform.streaming_api.config.CdnProperties;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.ConfigurationPropertiesBindException;
 import org.springframework.boot.context.properties.bind.validation.BindValidationException;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.runner.ApplicationContextRunner;
